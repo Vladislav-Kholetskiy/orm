@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/orm
+    username: postgres
+    password: 1580
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+# Можно немного снизить шум логов, если надо
+logging:
+  level:
+    org.springframework: info
+    org.hibernate.SQL: debug
